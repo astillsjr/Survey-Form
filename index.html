@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Progress Check</h1>
+    <p id="description">Thank you for taking the time to provide your input</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" name="name" placeholder="Enter your name" required /></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" name="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label" for="age">Age (optional) <input id="number" type="number" name="age" min="13" max="120" placeholder="Age" /><label>
+         
+      </fieldset>
+      <fieldset>
+        <legend>Current Status (required)</legend>
+        <label for="student"><input id="student" type="radio" name="status" value="student" class="inline" checked/>Student</label>
+        <label for="job"><input id="job" type="radio" name="status" value="full-job" class="inline" />Full Time Job</label>
+        <label for="learner"><input id="learner" type="radio" name="status" value="full-learner" class="inline" />Full Time Learner</label>
+        <label for="abstain"><input id="abstain" type="radio" name="status" value="abstain" class="inline" />Prefer not to say</label>
+        <label for="other"><input id="other" type="radio" name="status" value="other" class="inline" />Other</label>
+        <label for="dropdown">How often do you use freeCodeCamp?
+          <select id="dropdown" name="progress">
+            <option value="">Select a time frame</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="more-time">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Completed Lessons</legend>
+        <label>
+          <input name="certification" value="1" type="checkbox" class="inline" />Responsive Web Design
+        </label>
+        <label>
+          <input name="certification" value="2" type="checkbox" class="inline" />JavaScript Algorithm and Data Structures
+        </label>
+        <label>
+          <input name="certification" value="3" type="checkbox" class="inline" />Front End Development Libraries
+        </label>
+        <label>
+          <input name="certification" value="4" type="checkbox" class="inline" />Data Visualization
+        </label>
+        <label>
+          <input name="certification" value="5" type="checkbox" class="inline" />Relational Database
+        </label>
+        <label>
+          <input name="certification" value="6" type="checkbox" class="inline" />Back End Development and APIs
+        </label>
+        <label>
+          <input name="certification" value="7" type="checkbox" class="inline" />Quality Assurance
+        </label>
+        <label>
+          <input name="certification" value="8" type="checkbox" class="inline" />Scientific Computing with Python
+        </label>
+        <label>
+          <input name="certification" value="9" type="checkbox" class="inline" />Data Analysis with Python
+        </label>
+        <label>
+          <input name="certification" value="10" type="checkbox" class="inline" />Information Security
+        </label>
+        <label>
+          <input name="certification" value="11" type="checkbox" class="inline" />Machine Learning with Python
+        </label>
+        <label>
+          <input name="certification" value="12" type="checkbox" class="inline" />College Algebra with Python
+        </label>        
+      </fieldset>
+      <fieldset>
+        <label for="experince">What impact has freeCodeCamp had on you?
+          <textarea id="experience" name="experience" row="COMPLETE" cols="COMPLETE" placeholder="What has your experiece been like?"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
